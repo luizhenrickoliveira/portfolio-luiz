@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d; /* preto */
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.Hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #111; /* preto mais suave */
+    border-bottom: 5px solid #d40000; /* vermelho Flamengo */
+}
+
+/* Conteúdo de texto */
+.Hero-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 20px;
+    text-align: left;
+}
+
+.Hero-content h1 {
+    font-size: 2.5rem;
+    color: #d40000; /* vermelho Flamengo */
+    margin-bottom: 15px;
+}
+
+.Hero-content p {
+    font-size: 1.1rem;
+    color: #dddddd;
+    margin-bottom: 25px;
+}
+
+.cta-buttons {
+    background-color: #d40000;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons:hover {
+    background-color: #a80000;
+}
+
+/* Imagem e legenda */
+.Hero-image {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.Hero-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 3px solid #d40000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.imagem-mensagem {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #bbb;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .Hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Hero-content {
+        text-align: center;
+    }
+}
